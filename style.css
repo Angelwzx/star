@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+header, footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    color: #FFA3CB;
+}
+
+.btn {
+    background-color: #FFA3CB;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #FFA3CB;
+    border: 1px solid #FFA3CB;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media (max-width: 550px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1101px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.produto-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.produto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-card h3 {
+    margin: 10px 0;
+}
